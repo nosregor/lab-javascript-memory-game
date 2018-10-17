@@ -4,7 +4,8 @@ html {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-#memory_board {
+/* Old version */
+/* #memory_board {
   background:#dddddd;
 	width:800px;
 	height:540px;
@@ -12,10 +13,10 @@ html {
 	margin:0px auto;
   border-radius: 84px;
   box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1);
-}
+} */
 
 
-.card .back {
+/* .card .back {
   background-color: #456783;
 	width:71px;
 	height:71px;
@@ -27,6 +28,27 @@ html {
 .card .front.blocked,
 .card .back.blocked {
   pointer-events: none;
+} */
+
+#memory_board {
+  background: #dddddd;
+  width: 800px;
+  height: 540px;
+  padding: 70px;
+  margin: 0px auto;
+  border-radius: 84px;
+  box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
+  /* use flex */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #456783;
+  width: 111px;
+  height: 111px;
+  margin: 10px;
 }
 
 #score {
